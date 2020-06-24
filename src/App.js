@@ -1,8 +1,10 @@
 
 
 import React from "react"
-import TodoItem from "./TodoItem"
-import todosData from "./todosData"
+import TodoItem from "./todo-app/components/TodoItem"
+import todosData from "./todo-app/todosData"
+import Header from './todo-app/components/Header'
+import Footer from './todo-app/components/Footer'
 import './style.css'
 
 class App extends React.Component {
@@ -31,8 +33,9 @@ class App extends React.Component {
         
         return (
             <div className="todo-list">
-                <div>Let's Get Things Done!</div>
+                <Header/>
                 {todoItems}
+                <Footer/>
             </div>
         )    
     }

@@ -1,7 +1,7 @@
 
 
 import React, {Component} from "react"
-import './style.css'
+import '../../style.css'
 
 function TodoItem(props) {
     const completedStyle = {
